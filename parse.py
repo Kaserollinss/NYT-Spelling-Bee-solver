@@ -19,7 +19,7 @@ def get_valid_words():
                 valid_words.add(line[0:-1])
     return valid_words
 
-sorted_list = sorted(get_valid_words(), key=len)
+sorted_list = sorted(get_valid_words(), key=len, reverse=True)
 
 
 print(sorted_list)
